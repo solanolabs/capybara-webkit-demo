@@ -1,11 +1,7 @@
 ---
 :tddium:
-  :ruby_version: "ruby-1.9.3-p545"
-  :bundler_version: "1.2.5"
-  :hooks:
-    :pre: bundle exec rake tddium:pre_hook
-    :worker_setup: bundle exec rake tddium:db_hook
-    :post_setup: bash bin/post_hook.sh
+  :ruby_version: "ruby-2.1.2"
+  :bundler_version: "1.6.2
   :postgresql: 
     :version: "9.1"
   :test_pattern:
