@@ -1,0 +1,14 @@
+---
+:tddium:
+  :ruby_version: "ruby-1.9.3-p545"
+  :bundler_version: "1.2.5"
+  :hooks:
+    :pre: bundle exec rake tddium:pre_hook
+    :worker_setup: bundle exec rake tddium:db_hook
+    :post_setup: bash bin/post_hook.sh
+  :postgresql: 
+    :version: "9.1"
+  :test_pattern:
+    - spec/**_spec.rb
+  :xvfb:
+    :xvfb_command: "./startHeadlessBrowser.sh"
