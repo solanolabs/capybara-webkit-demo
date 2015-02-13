@@ -1,3 +1,5 @@
 == What is this?
 
 This dummy app provides an example of how to use capybara-webkit within_window support.
+
+A
